@@ -414,9 +414,9 @@ FACE_DETECTION
 
 以下検証結果
 
-### 無表情の人
+### 無表情の人その1
 
-![miyakawa](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/miyakawa.jpg?token=ABi0jNeom1szkffdVb4ogyew5ysifSEzks5XbOZBwA%3D%3D)
+![porker-face1](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/porker-face.jpg?token=ABi0jFvLMZXST405pxIkl0LP3jUC4gv-ks5XbPoZwA%3D%3D)
 
 どの項目もVERY_UNLIKELYになる
 
@@ -428,14 +428,31 @@ FACE_DETECTION
           "underExposedLikelihood": "VERY_UNLIKELY",
           "blurredLikelihood": "VERY_UNLIKELY",
           "headwearLikelihood": "VERY_UNLIKELY"
+```
 
+### 無表情の人その2
+
+もう少しだけ笑顔？を含んだ感じな人
+
+![porker-face2](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/porker-face2.jpg?token=ABi0jFD8Vnky7teL0JRc8gPrCFErWra2ks5XbPo0wA%3D%3D)
+
+どの項目もVERY_UNLIKELYになる
+
+```
+          "joyLikelihood": "VERY_UNLIKELY",
+          "sorrowLikelihood": "VERY_UNLIKELY",
+          "angerLikelihood": "VERY_UNLIKELY",
+          "surpriseLikelihood": "VERY_UNLIKELY",
+          "underExposedLikelihood": "VERY_UNLIKELY",
+          "blurredLikelihood": "VERY_UNLIKELY",
+          "headwearLikelihood": "VERY_UNLIKELY"
 ```
 
 
 
 ### 嬉しそうな人その1
 
-![near-person2](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/maezawa.jpg?token=ABi0jN1fNIn-6GFggPHVky6d20wyCOFMks5XbPWWwA%3D%3D)
+![near-person2](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/funny1.jpg?token=ABi0jN-yxtzIAHnZ41OhU9d6EOnU6_quks5XbPqkwA%3D%3D)
 
 
 joy Likelihood (喜び可能性)がVERY_LIKELY
@@ -453,7 +470,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 ### 嬉しそうな人その2
 
-![near-person3](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/shimizu.jpg?token=ABi0jPVesqgbaSz59prVAW6LCh0QUgWvks5XbPc7wA%3D%3D)
+![near-person3](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/funny2.jpg?token=ABi0jE2jg8r_dpdoiZz82wbRDJYTBouVks5XbPrLwA%3D%3D)
 
 女性には優しい
 
@@ -482,7 +499,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 を期待したけども ``` VERY_UNLIKELY ```
 
-![angry-person](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/kimura.jpg?token=ABi0jAnods-Cspuu1ZwtAAyeg63PCLavks5XbPa-wA%3D%3D)
+![angry-person](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/angry1.jpg?token=ABi0jABCLPL794OLEq8KEvgEM6k35hrYks5XbPrwwA%3D%3D)
 
 
 ```
@@ -497,6 +514,19 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 ### 怒ってる人その2
 
+![ner-person](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/angry2.jpg?token=ABi0jJcDzPD9AbM7eJy0Z-ba3zG2US3Fks5XbPt8wA%3D%3D)
+
+女性が少しだけ怒ってる感じの顔。この位じゃ ``` angerLikelihood ``` が
+``` VERY_LIKELY ``` にならない。
+
+少しだけ、楽しくないって判定になった
+
+```
+"joyLikelihood": "UNLIKELY" 
+```
+
+
+
 
 ```
          "joyLikelihood": "UNLIKELY",
@@ -507,3 +537,135 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
           "blurredLikelihood": "VERY_UNLIKELY",
           "headwearLikelihood": "VERY_UNLIKELY"
 ```
+
+
+## 物体認識 LABEL_DETECTION
+
+次は絵を認識してみる。
+犬の画像を書いて、犬と認識してくれるかを検証してみる。
+
+### 天才的画伯その１
+
+![dog](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/dog5.jpg?token=ABi0jGaxFLGXU_t8yZ20_ooGEGS5_Ec6ks5XbPyzwA%3D%3D)
+
+cartoon 漫画
+sculpture 彫刻
+nose 鼻
+drawing お絵かき
+dango だんご
+
+だんごがよくわからない
+
+```
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/0215n",
+          "description": "cartoon",
+          "score": 0.90735883
+        },
+        {
+          "mid": "/m/06msq",
+          "description": "sculpture",
+          "score": 0.85323882
+        },
+        {
+          "mid": "/m/0k0pj",
+          "description": "nose",
+          "score": 0.83781445
+        },
+        {
+          "mid": "/m/02csf",
+          "description": "drawing",
+          "score": 0.76977384
+        },
+        {
+          "mid": "/m/012xv6",
+          "description": "dango",
+          "score": 0.75
+        }
+      ]
+    }
+  ]
+}
+```
+
+### 天才的画伯その2
+
+![dog](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/dog1.jpg?token=ABi0jEgXZiWgaa2IhPO_H1p6dFTcQZxjks5XbP3WwA%3D%3D)
+
+cartoon 漫画
+drawing お絵かき
+sketch スケッチ
+aisle 通路
+
+通路？？
+
+```
+{
+  "responses": [
+    {
+      "labelAnnotations": [
+        {
+          "mid": "/m/0215n",
+          "description": "cartoon",
+          "score": 0.90353215
+        },
+        {
+          "mid": "/m/07glzq",
+          "description": "sketch",
+          "score": 0.83572245
+        },
+        {
+          "mid": "/m/02csf",
+          "description": "drawing",
+          "score": 0.74130529
+        },
+        {
+          "mid": "/m/01rd5z",
+          "description": "aisle",
+          "score": 0.68881238
+        },
+        {
+          "mid": "/m/081rb",
+          "description": "writing",
+          "score": 0.62101489
+        }
+      ]
+    }
+  ]
+}
+```
+
+### エロ判定
+
+男の乳首はエロ判定になるのか？試してみた
+
+![filter](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/filter1.jpg?token=ABi0jPvGCOsE7U0SHbUa2_vZIPpwAJ5kks5XbPv1wA%3D%3D)
+
+"adult": "VERY_LIKELY",
+
+エロですw
+
+```
+{
+  "responses": [
+    {
+      "safeSearchAnnotation": {
+        "adult": "VERY_LIKELY",
+        "spoof": "VERY_UNLIKELY",
+        "medical": "VERY_LIKELY",
+        "violence": "UNLIKELY"
+      }
+    }
+  ]
+}
+```
+
+
+## まとめ
+
+顔のポジションまでは試していないけども、
+顔の付加情報はまだまだだなーという印象でした。
