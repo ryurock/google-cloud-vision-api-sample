@@ -4,7 +4,7 @@ require 'json'
 require 'net/https'
 require 'pp'
 
-IMAGE_FILE = './images/soshizaki-ero.jpg'
+IMAGE_FILE = './images/angry2.jpg'
 API_KEY = ENV['GOOGLE_API_KEY']
 API_URL = "https://vision.googleapis.com/v1/images:annotate?key=#{API_KEY}"
 
@@ -19,7 +19,7 @@ body = {
     },
     features: [
       {
-        type: 'SAFE_SEARCH_DETECTION',
+        type: 'FACE_DETECTION',
         maxResults: 5
       }
     ]
