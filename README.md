@@ -416,7 +416,7 @@ FACE_DETECTION
 
 ### 無表情の人その1
 
-![porker-face1](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/porker-face.jpg?token=ABi0jFvLMZXST405pxIkl0LP3jUC4gv-ks5XbPoZwA%3D%3D)
+![porker-face1](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/porker-face.jpg?token=ABi0jFvLMZXST405pxIkl0LP3jUC4gv-ks5XbPoZwA%3D%3D)
 
 どの項目もVERY_UNLIKELYになる
 
@@ -452,7 +452,7 @@ FACE_DETECTION
 
 ### 嬉しそうな人その1
 
-![near-person2](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/funny1.jpg?token=ABi0jN-yxtzIAHnZ41OhU9d6EOnU6_quks5XbPqkwA%3D%3D)
+![near-person2](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/funny1.jpg?token=ABi0jN-yxtzIAHnZ41OhU9d6EOnU6_quks5XbPqkwA%3D%3D)
 
 
 joy Likelihood (喜び可能性)がVERY_LIKELY
@@ -470,7 +470,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 ### 嬉しそうな人その2
 
-![near-person3](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/funny2.jpg?token=ABi0jE2jg8r_dpdoiZz82wbRDJYTBouVks5XbPrLwA%3D%3D)
+![near-person3](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/funny2.jpg?token=ABi0jE2jg8r_dpdoiZz82wbRDJYTBouVks5XbPrLwA%3D%3D)
 
 女性には優しい
 
@@ -499,7 +499,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 を期待したけども ``` VERY_UNLIKELY ```
 
-![angry-person](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/angry1.jpg?token=ABi0jABCLPL794OLEq8KEvgEM6k35hrYks5XbPrwwA%3D%3D)
+![angry-person](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/angry1.jpg?token=ABi0jABCLPL794OLEq8KEvgEM6k35hrYks5XbPrwwA%3D%3D)
 
 
 ```
@@ -514,7 +514,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 ### 怒ってる人その2
 
-![ner-person](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/angry2.jpg?token=ABi0jJcDzPD9AbM7eJy0Z-ba3zG2US3Fks5XbPt8wA%3D%3D)
+![ner-person](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/angry2.jpg?token=ABi0jJcDzPD9AbM7eJy0Z-ba3zG2US3Fks5XbPt8wA%3D%3D)
 
 女性が少しだけ怒ってる感じの顔。この位じゃ ``` angerLikelihood ``` が
 ``` VERY_LIKELY ``` にならない。
