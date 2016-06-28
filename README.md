@@ -434,7 +434,7 @@ FACE_DETECTION
 
 もう少しだけ笑顔？を含んだ感じな人
 
-![porker-face2](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/porker-face2.jpg?token=ABi0jFD8Vnky7teL0JRc8gPrCFErWra2ks5XbPo0wA%3D%3D)
+![porker-face2](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/porker-face2.jpg?token=ABi0jFD8Vnky7teL0JRc8gPrCFErWra2ks5XbPo0wA%3D%3D)
 
 どの項目もVERY_UNLIKELYになる
 
@@ -546,7 +546,7 @@ joy Likelihood (喜び可能性)がVERY_LIKELY
 
 ### 天才的画伯その１
 
-![dog](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/dog5.jpg?token=ABi0jGaxFLGXU_t8yZ20_ooGEGS5_Ec6ks5XbPyzwA%3D%3D)
+![dog](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/dog5.jpg?token=ABi0jGaxFLGXU_t8yZ20_ooGEGS5_Ec6ks5XbPyzwA%3D%3D)
 
 cartoon 漫画
 sculpture 彫刻
@@ -594,7 +594,7 @@ dango だんご
 
 ### 天才的画伯その2
 
-![dog](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/dog1.jpg?token=ABi0jEgXZiWgaa2IhPO_H1p6dFTcQZxjks5XbP3WwA%3D%3D)
+![dog](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/dog1.jpg?token=ABi0jEgXZiWgaa2IhPO_H1p6dFTcQZxjks5XbP3WwA%3D%3D)
 
 cartoon 漫画
 drawing お絵かき
@@ -643,7 +643,7 @@ aisle 通路
 
 男の乳首はエロ判定になるのか？試してみた
 
-![filter](https://raw.githubusercontent.com/eversense/google-cloud-vision-api-sample/master/images/filter1.jpg?token=ABi0jPvGCOsE7U0SHbUa2_vZIPpwAJ5kks5XbPv1wA%3D%3D)
+![filter](https://raw.githubusercontent.com/ryurock/google-cloud-vision-api-sample/master/images/filter1.jpg?token=ABi0jPvGCOsE7U0SHbUa2_vZIPpwAJ5kks5XbPv1wA%3D%3D)
 
 "adult": "VERY_LIKELY",
 
